@@ -1,0 +1,97 @@
+body {
+  font-family: Comic Sans MS, Arial;
+    font-size: 50px;
+}
+
+.animation {
+   font-family: Uni Sans, Arial;
+    font-size: 80px;
+}
+
+.main-top {
+  text-align: center;
+  background-color: black;
+  background-image: url("https://i2-prod.chroniclelive.co.uk/incoming/article16334195.ece/ALTERNATES/s1227b/0_Charlton-Athletic-v-Sunderland-Sky-Bet-League-One-Play-off-Final.jpg");
+  background-size: cover; 
+  padding: 40px;
+  color: white;
+  border-radius: 10px;
+}
+
+.description {
+  border-radius: 10px;
+  font-family: "Comic Sans MS", Arial, sans-serif;
+  background-color: darkgray;
+  color: black;
+  font-size: 12px;
+  font-weight: normal;.description {
+  border-radius: 10px;
+  font-family: "Comic Sans MS", Arial, sans-serif;
+  background-color: darkgray;
+  color: black;
+  font-size: 9px;
+  font-weight: normal;
+}
+
+  text-align: center;
+}
+
+.link {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Uni Sans, Arial;
+}
+
+.link:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+  font-family: Uni Sans, Arial;
+} 
+}
+
+
+
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8a1515;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 1.3s, visibility 9.3s;
+  }
+
+  .scroll-to-top i {
+    font-size: 20px;
+  }
+
+  .footer {
+    padding: 30px;
+      font-size: 15px;
+       font-family:   Uni Sans, Arial;
+         background-color: darkgray;
+    text-align: center;
+    border-radius: 10px;
+    bottom: 30px;
+   
+  }
+
+.small-text {
+   font-size: 4px;
+}
+
+.header {
+  font-size: 30px;
+    background-image: url"https://th.bing.com/th/id/OIP.R2FRM5KUiYPpp6W0DyVZFQHaFc?w=252&h=185&c=7&r=0&o=5&dpr=1.5&pid=1.7";
+
+  padding: 50px;
+  font-family: Uni Sans, Arial;
+    text-align: center;
+}
