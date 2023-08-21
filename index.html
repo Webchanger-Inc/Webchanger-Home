@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c5fc72ac24.js" crossorigin="anonymous"></script>
+<title>Home - Webchanger Inc.</title>
+  <link rel="icon" href="<i class="fa-brands fa-wordpress" type="icon"></i>
+  <link rel="stylesheet" href="style.css"> 
+<style> 
+  #typing {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  #cursor {
+    display: inline-block;
+    animation: blink 1s infinite;
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+</style>
+</head>
+<body>
+
+ <div class = "main-top">
+   <div class="animation
+  <div id="typing">I am <span id="role"></span><span id="cursor">|</span></div>
+</div>
+
+<script>
+const roles = ["A DJ", "Discord Developer", "Python Developer", "Sunderland Supporter", "Web Developer"];
+const roleElement = document.getElementById("role");
+const cursorElement = document.getElementById("cursor");
+
+let currentRoleIndex = 0;
+let currentCharIndex = 0;
+let isTyping = true;
+
+function updateRole() {
+  if (isTyping) {
+    roleElement.textContent = roles[currentRoleIndex].slice(0, currentCharIndex);
+    currentCharIndex++;
+
+    if (currentCharIndex <= roles[currentRoleIndex].length) {
+      setTimeout(updateRole, 150);
+    } else {
+      setTimeout(() => {
+        isTyping = false;
+        currentCharIndex--;
+        updateRole();
+      }, 3000);
+    }
+  } else {
+    roleElement.textContent = roles[currentRoleIndex].slice(0, currentCharIndex);
+    currentCharIndex--;
+
+    if (currentCharIndex >= 0) {
+      setTimeout(updateRole, 150);
+    } else {
+      currentRoleIndex = (currentRoleIndex + 1) % roles.length;
+      isTyping = true;
+      setTimeout(updateRole, 150);
+    }
+  }
+}
+
+function blinkCursor() {
+  cursorElement.style.visibility = cursorElement.style.visibility === "hidden" ? "visible" : "hidden";
+  setTimeout(blinkCursor, 500);
+}
+
+updateRole();
+blinkCursor();
+</script>
+ </div>
+
+  <div class = "description">
+  
+ <h1>Hello,</h1> 
+    <p>Welcome to Webchanger Inc. | We love to help people achieve their dreams in tech.</p> 
+    <p>We are masters in:</p>
+    <p>Web Creation/Development</p>
+    <p>Python Development</p>
+    <p><u>FREE</u> Discord Bot Creation</p>
+  </div>
+
+  <div class = "description">
+         <h1>Links:</h1>     
+           <p><a href="webs.html" class="link">Websites Created</a></p>
+    <p><a href="socials.html" class="link">Socials</a></p>
+  </div>
+   <div class = "footer">
+   <p>&copy; 2023 Webchanger Inc.</p>
+     <p class = "small-text">Version 6.03</p>
+   </div>
+</body>
+</html>
